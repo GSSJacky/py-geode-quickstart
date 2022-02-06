@@ -1,14 +1,15 @@
 # py-geode-quickstart
-=================
 
-This library enables your python applications to use GemFire as a datastore. (GemFire is a distributed key-value store.). This library exposes Spring's CrudRepository like methods in an effort to simplify GemFire's APIs while still giving access to advanced GemFire features. 
+This library enables your python applications to use GemFire/Geode as a datastore by a quickstart samples(GemFire/Geode is a distributed key-value store). This library exposes Spring's CrudRepository likely methods in an effort to simplify GemFire/Geode's APIs access. 
 
-Prerequisite:
+## Prerequisite
+
 -Gemfire9.10.14
+
 -Python3.9.10 or Python3.8.12
 
+
 ## Quick Start
---------------
 
 1. Start the GemFire REST service by [following the instructions](http://gemfire.docs.pivotal.io/docs-gemfire/latest/rest_apps/setup_config.html)
 
@@ -46,4 +47,7 @@ Cleared region's all entries.
 1.This library exercises [GemFire's REST APIs](http://gemfire.docs.pivotal.io/docs-gemfire/latest/rest_apps/book_intro.html) for enabling your python application to use GemFire as its datastore.
 
 2.When developing your own python client, you can also refer the API reference from swagger-ui page:
+
 http://[Host_Name]:[Rest_API_Port]/geode/swagger-ui.html
+
+![swagger-ui](https://github.com/GSSJacky/py-geode-quickstart/blob/main/swagger-ui.png)
