@@ -3,17 +3,10 @@
 
 This library enables your python applications to use GemFire as a datastore. (GemFire is a distributed key-value store.). This library exposes Spring's CrudRepository like methods in an effort to simplify GemFire's APIs while still giving access to advanced GemFire features. 
 
-Requirements(Tested env):
+Prerequisite:
 -Gemfire9.10.14
 -Python3.9.10 or Python3.8.12
 
-## Installation
----------------
-
-Install from source:
-```
-    $ sudo python setup.py install
-```
 ## Quick Start
 --------------
 
@@ -30,6 +23,23 @@ Install from source:
 ```
 /usr/local/bin/python3 /Users/jaxu/Downloads/TOI/py-geode-rest/py-geode-quickstart/quickstart.py
 ```
+
+For example:
+```
+client = GeodeClient(hostname="localhost", port=7060, user="", password="", debug_mode=True)
+list_all_regions(client)
+test_put(client)
+test_delete(client)
+test_clearAll(client)
+test_adhoc_query(client)
+
+macuser1:py-geode-quickstart macUser1$ /usr/local/bin/python3 /Users/jaxu/Downloads/TOI/py-geode-rest/py-geode-quickstart/quickstart.py
+['exampleRegion', 'Customer', 'ClusterdSpringSessions']
+Deleted specified entry:.379
+Cleared region's all entries.
+[]
+```
+
 
 ## API Reference
 ----------------
