@@ -33,7 +33,7 @@ test_delete(client)
 test_clearAll(client)
 test_adhoc_query(client)
 
-macuser1:py-geode-quickstart macUser1$ /usr/local/bin/python3 /Users/jaxu/Downloads/TOI/py-geode-rest/py-geode-quickstart/quickstart.py
+macUser1:py-geode-quickstart macUser1$ /usr/local/bin/python3 /Users/macUser1/py-geode-quickstart/quickstart.py
 ['exampleRegion', 'Customer', 'ClusterdSpringSessions']
 Deleted specified entry:.379
 Cleared region's all entries.
